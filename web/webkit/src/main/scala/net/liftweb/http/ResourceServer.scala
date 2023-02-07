@@ -50,9 +50,9 @@ object ResourceServer {
     // These automatic rewrites have been disabled since we're not currently
     // minifying our internal js files on build. There's an open question in
     // my mind as to whether or not we _should_ continue doin that.
-    // case "lift.js" :: Nil => List("lift-min.js")
-    // case "json.js" :: Nil => List("json2-min.js")
-    // case "json2.js" :: Nil => List("json2-min.js")
+    case "lift.js" :: Nil => List("lift-min.js")
+    case "json.js" :: Nil => List("json2-min.js")
+    case "json2.js" :: Nil => List("json2-min.js")
     case xs => xs
   }
 
