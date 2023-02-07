@@ -400,7 +400,7 @@
       }
     }
 
-    function rehydrateComets() {
+    function rehydrateComets(callback) {
       function onSuccess(html) {
         var iframe = document.createElement("iframe");
         var doc = document.createElement("html");
@@ -419,6 +419,9 @@
         }
 
         restartComet();
+        setTimeout(function() {
+          callback();
+        });
       }
       function onFailure(err) {
         // Try again??
