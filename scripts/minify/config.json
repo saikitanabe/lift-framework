@@ -1,0 +1,7 @@
+{
+  "files": [
+    "../../web/webkit/src/main/resources/toserve/lift.js",
+		"../../web/webkit/src/main/resources/toserve/yui/json.js",
+		"../../web/webkit/src/main/resources/toserve/json2.js"
+  ]
+}
